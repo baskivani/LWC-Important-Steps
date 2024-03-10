@@ -1,0 +1,41 @@
+<template>
+   
+    <lightning-card title="Conditonal Rendering Eski Yontem"> 
+
+        <template if:true={sart1}> 
+
+       <h1>   ***********SİYAH *************</h1>         
+
+        </template>
+
+        <template if:false={sart2}> 
+
+            <h1>   ********** BEYAZ ***********</h1>         
+     
+             </template>
+
+    </lightning-card>
+
+    <lightning-card title="Conditional Rendering Buton ekleme">  
+        <lightning-button 
+        variant="brand" 
+        label="Siyah/Beyaz" 
+        title="Primary action" 
+        onclick={handleClick} 
+        class="slds-m-left_x-small"></lightning-button>      
+    
+
+    <template if:true={flag}> 
+
+        <h1>   ***********SİYAH *************</h1>         
+ 
+         </template>
+ 
+         <template if:false={flag}> 
+ 
+             <h1>   ********** BEYAZ ***********</h1>         
+      
+              </template>
+
+    </lightning-card>
+</template>
