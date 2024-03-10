@@ -1,0 +1,22 @@
+<template>
+  
+    <lightning-card title="Data Manipulasyon"> 
+
+        <lightning-input type="text" 
+        label="Adinizi giriniz" 
+        onchange={handleilkIsim}>
+        </lightning-input>
+
+        <p> Benim adim {ilkIsim}  </p> 
+    </lightning-card>
+
+    <lightning-card title="Data Manipulasyon get methodu ile"> 
+
+        <lightning-input type="text" 
+        label="Adinizi giriniz"  
+        onchange={handleilkIsimGet}>
+        </lightning-input>
+
+        <p> Benim adim {getIlkIsim}  </p> 
+    </lightning-card>
+</template>
