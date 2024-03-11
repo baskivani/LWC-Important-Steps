@@ -1,0 +1,28 @@
+<template>
+    
+    <lightning-card title ='Conditonal Rendering Yeni Yontem'>
+        
+   <div lwc:if={durum1}>
+
+    statement 1: merhaba
+   </div>     
+   <template lwc:elseif={durum2}>
+
+    statement 2: nasilsin?
+   </template>
+
+   <template lwc:elseif={durum3}>
+
+    statement 3: Ne haber dostum?
+   </template>
+
+   <template lwc:else>
+
+    statement last: Son Mesajim budur.
+   </template>
+
+
+
+
+    </lightning-card>
+</template>
