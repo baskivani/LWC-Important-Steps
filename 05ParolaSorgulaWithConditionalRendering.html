@@ -1,0 +1,24 @@
+
+<template>
+
+    <lightning-card title="Parola Sorgula">
+
+        <lightning-input type="text" 
+        label="Parola giriniz"  
+        onchange={handleChange}>
+        </lightning-input>
+
+        <template if:true={flag}>
+
+            <h1>  **Parolaniz dogru</h1>
+
+        </template>
+
+        <template if:false={flag}>
+
+            <h1>  ***Parolaniz yanlis***</h1>
+            <h1>   *** Bir daha deneyin***</h1>
+
+        </template>
+    </lightning-card>
+</template>
