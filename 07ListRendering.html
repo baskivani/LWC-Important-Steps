@@ -1,0 +1,24 @@
+<template>
+    
+<lightning-card title="List Rendering For Each Yontemi">  
+
+<template for:each={sehirler} for:item="sehir">
+
+    <p key={sehir}>   Sehir >>>  {sehir}</p>
+
+</template>
+</lightning-card>
+
+<lightning-card title="List Rendering Iteration Yontemi"> 
+
+<template iterator:it={sehirler}>
+
+    <p key={it.value}>     Sehir >>> {it.value}</p>
+
+</template>
+
+</lightning-card>
+
+
+
+</template>
