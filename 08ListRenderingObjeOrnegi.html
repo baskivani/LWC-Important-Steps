@@ -1,0 +1,20 @@
+<template>
+  
+   <lightning-card title="List Rendering For:Each Loop">
+    
+    <template for:each={cicekListesi} for:item="cicek">
+<div key={cicek.id}>
+
+    <p>  Cicek adi >>> {cicek.name}</p>
+    <p>  Cicek familyasi >>> {cicek.familya}</p>
+    <img src={cicek.imgUrl} alt ={cicek.name} width="200" height="250"> 
+
+</div>
+    
+    </template>
+
+
+
+   </lightning-card> 
+
+</template>
